@@ -1,0 +1,14 @@
+[
+  {
+    "nombre": "Paracetamol",
+    "dosis": "500mg",
+    "indicaciones": "Alivio del dolor y fiebre",
+    "contraindicaciones": "Insuficiencia hepática severa"
+  },
+  {
+    "nombre": "Ibuprofeno",
+    "dosis": "400mg",
+    "indicaciones": "Dolor e inflamación",
+    "contraindicaciones": "Úlcera gástrica activa"
+  }
+]
