@@ -1,0 +1,10 @@
+0 paracetamol
+1 ibuprofeno
+2 Aspirina
+3 amoxicilina
+4 omeprazol
+5 metformina
+6 salbutamol
+7 Lorazepam
+8 furosemina
+9 ciprofloxacino
