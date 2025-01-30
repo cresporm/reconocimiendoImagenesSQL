@@ -10,6 +10,8 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -21,10 +23,10 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => SplashScreen(), // Pantalla inicial
         '/home': (context) => HomeScreen(), // Pantalla principal (Home)
-        '/result': (context) => ResultScreen(image: ModalRoute.of(context)!.settings.arguments as File), // Pantalla de resultados
+        '/result': (context) => ResultScreen(
+            image: ModalRoute.of(context)!.settings.arguments
+                as File), // Pantalla de resultados
       },
     );
   }
 }
-
-

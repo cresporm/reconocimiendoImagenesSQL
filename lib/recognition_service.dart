@@ -1,4 +1,4 @@
-import 'package:tflite/tflite.dart';
+import 'package:tflite_v2/tflite_v2.dart';
 
 class RecognitionService {
   static Future<void> loadModel() async {
@@ -17,10 +17,10 @@ class RecognitionService {
     try {
       var output = await Tflite.runModelOnImage(
         path: imagePath, // Ruta de la imagen
-        numResults: 5,  // Máximo de predicciones a devolver
+        numResults: 5, // Máximo de predicciones a devolver
         threshold: 0.5, // Umbral de confianza (ajustable)
         imageMean: 127.5, // Normalización (puedes ajustar si es necesario)
-        imageStd: 127.5,  // Normalización (puedes ajustar si es necesario)
+        imageStd: 127.5, // Normalización (puedes ajustar si es necesario)
       );
       return output;
     } catch (e) {
@@ -33,7 +33,3 @@ class RecognitionService {
     await Tflite.close();
   }
 }
-
-
-
-

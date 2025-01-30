@@ -9,12 +9,16 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   File? _image; // Variable para almacenar la imagen seleccionada
-  final ImagePicker _picker = ImagePicker(); // Instancia del selector de imágenes
+  final ImagePicker _picker =
+      ImagePicker(); // Instancia del selector de imágenes
 
   // Método para tomar una foto con la cámara
   Future<void> _pickImage(ImageSource source) async {
     try {
-      final pickedFile = await _picker.pickImage(source: source);
+      final pickedFile = await _picker.pickImage(
+        source: source,
+        preferredCameraDevice: CameraDevice.rear,
+      );
       if (pickedFile != null) {
         setState(() {
           _image = File(pickedFile.path); // Guardar la imagen seleccionada
@@ -50,7 +54,8 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             if (_image != null) ...[
               SizedBox(height: 20),
-              Image.file(_image!, height: 200), // Mostrar la imagen seleccionada
+              Image.file(_image!,
+                  height: 200), // Mostrar la imagen seleccionada
             ],
           ],
         ),
@@ -58,6 +63,3 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 }
-
-
-
