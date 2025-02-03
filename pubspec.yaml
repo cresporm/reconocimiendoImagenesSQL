@@ -65,8 +65,9 @@ flutter:
     - assets/logo.jpg
     - assets/labels.txt
     - assets/model.tflite
-    - deprecated/model.tflite
-    - deprecated/labels.txt
+    - assets/medicamentos_info.json
+   
+
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

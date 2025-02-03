@@ -21,11 +21,11 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: '/',
       routes: {
-        '/': (context) => SplashScreen(), // Pantalla inicial
-        '/home': (context) => HomeScreen(), // Pantalla principal (Home)
+        '/': (context) => SplashScreen(), 
+        '/home': (context) => HomeScreen(), 
         '/result': (context) => ResultScreen(
             image: ModalRoute.of(context)!.settings.arguments
-                as File), // Pantalla de resultados
+                as File), 
       },
     );
   }

@@ -1,10 +1,10 @@
-0 Amoxicilina
-1 Ampicilina
-2 Aspirina
-3 Diclofenaco
-4 Ibuprofeno
-5 Loperamida
-6 Loratadina
-7 Losartan
-8 Omeprazol
-9 Paracetamol
+Amoxicilina
+Ampicilina
+Aspirina
+Diclofenaco
+Ibuprofeno
+Loperamida
+Loratadina
+Losartan
+Omeprazol
+Paracetamol
